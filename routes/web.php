@@ -1,7 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Customer\HomeController;
+use App\Http\Controllers\Customer\ProductController;
+use App\Http\Controllers\Customer\PrivacyController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +17,6 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index'])->name('index');
+Route::get('/', [HomeController::class, 'index'])->name('customer.home');
+Route::get('/product/detail/123', [ProductController::class, 'index'])->name('customer.detail');
+Route::get('/privacy-policy', [PrivacyController::class, 'index'])->name('customer.privacy');

@@ -1,7 +1,8 @@
 
 try {
-    
+    window.$ = window.jQuery = require('jquery');
     require('bootstrap');
+    require('jquery-ui');
     require('@fortawesome/fontawesome-free/js/all');
 } catch (e) {}
 

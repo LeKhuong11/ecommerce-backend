@@ -1,0 +1,148 @@
+#detail {
+    margin-bottom: 100px;
+
+    .breadcrumb{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f4efe9;
+        padding: 12px 0;
+    }
+
+    .product-detail {
+
+        .images-item{
+
+            .item {
+                width: 80px;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 10px;
+                cursor: pointer;
+            }
+        }
+
+        h3 {
+            font-weight: 700;
+            font-family: fantasy;
+        }
+        .rate {
+            svg {
+                color: $yellow;
+            }
+        }
+
+        .price {
+
+            .money {
+                font-size: 27px;
+                color: #ffc222;
+                font-family: inherit;
+                font-weight: 800;
+            }
+
+            .sale {
+                text-decoration: line-through;
+                color: #999999;
+                font-size: 17px;
+                font-weight: 600;
+            }
+        }
+
+        .size {
+
+            label {
+                padding: 4px;
+            }
+            
+            input[type="radio"]:checked {
+                & + div {
+                  background-color: #000;
+                  color: #fff;
+                }
+            }
+
+            div {
+                width: 39px;
+                height: 42px;
+                border: 1px solid #000;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+        }
+
+        .quantity {
+            display: flex;
+            
+            button {
+                background: #fff;
+                border: 1px solid #cacaca;
+                width: 45px;
+                height: 45px;
+                padding: 7px 0;
+            }
+
+            input {
+                width: 40px;
+                padding: 0 13px;
+                border: 1px solid #cacaca;
+                border-left-width: 0;
+                border-right-width: 0;
+                padding: 7px 15px;
+                height: 45px;
+            }
+            input:focus {
+                outline: none;
+            }
+        }
+
+        .btn-submit {
+            height: 45px;
+            padding: 12px 40px;
+        }
+
+        .share {
+
+            .facebook {
+                color: #3b5998;
+
+                svg {
+                    font-size: 33px;
+                }
+            }
+
+            .twitter {
+                color: #1da1f2;
+                svg {
+                    font-size: 25px;
+                    background: #1da1f2;
+                    color: #fff;
+                    padding: 5px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    .review {
+            
+        .description {
+            color: #868686;
+        }
+        .comment-desc {
+            font-size: 14px;
+            color: #868686;
+        }
+    }
+
+    .rate {
+        svg {
+            color: $yellow;
+        }
+    }
+}

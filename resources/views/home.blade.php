@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('seo')
-<title>Store</title>
+    <title>Store</title>
 @endsection
 
 @section('content')
@@ -89,7 +89,7 @@
                 <div class="col-sm-6 col-lg-4 col-xl-3">
                     <div class="product-item">
                         <div class="img">
-                            <a href="#">
+                            <a href="{{ route('customer.detail') }}">
                                 <img width="75%" src="{{ asset('assets/products/item1.webp') }}" alt="">
                             </a>
                             <div class="sale">
@@ -113,7 +113,7 @@
                                 Tucked in between three soft buns are two all-beef patties, cheddar cheese, ketchup,
                                 onion, pickles and iceberg lettuce. Hesburger’s own paprika and cucumber mayonnaise add
                                 the crowning touch. Oh baby!</p>
-                            <div class="d-flex justify-content-between">
+                            <div class="d-flex justify-content-between mt-3">
                                 <div class="price">
                                     <span class="money">$8.00</span>
                                     <span class="sale">$12.00</span>
@@ -152,7 +152,7 @@
                                 Tucked in between three soft buns are two all-beef patties, cheddar cheese, ketchup,
                                 onion, pickles and iceberg lettuce. Hesburger’s own paprika and cucumber mayonnaise add
                                 the crowning touch. Oh baby!</p>
-                            <div class="d-flex justify-content-between">
+                            <div class="d-flex justify-content-between mt-3">
                                 <div class="price">
                                     <span class="money">$8.00</span>
                                     <span class="sale">$12.00</span>
@@ -191,7 +191,7 @@
                                 Tucked in between three soft buns are two all-beef patties, cheddar cheese, ketchup,
                                 onion, pickles and iceberg lettuce. Hesburger’s own paprika and cucumber mayonnaise add
                                 the crowning touch. Oh baby!</p>
-                            <div class="d-flex justify-content-between">
+                            <div class="d-flex justify-content-between mt-3">
                                 <div class="price">
                                     <span class="money">$8.00</span>
                                     <span class="sale">$12.00</span>
@@ -230,7 +230,7 @@
                                 Tucked in between three soft buns are two all-beef patties, cheddar cheese, ketchup,
                                 onion, pickles and iceberg lettuce. Hesburger’s own paprika and cucumber mayonnaise add
                                 the crowning touch. Oh baby!</p>
-                            <div class="d-flex justify-content-between">
+                            <div class="d-flex justify-content-between mt-3">
                                 <div class="price">
                                     <span class="money">$8.00</span>
                                     <span class="sale">$12.00</span>
@@ -269,7 +269,7 @@
                                 Tucked in between three soft buns are two all-beef patties, cheddar cheese, ketchup,
                                 onion, pickles and iceberg lettuce. Hesburger’s own paprika and cucumber mayonnaise add
                                 the crowning touch. Oh baby!</p>
-                            <div class="d-flex justify-content-between">
+                            <div class="d-flex justify-content-between mt-3">
                                 <div class="price">
                                     <span class="money">$8.00</span>
                                     <span class="sale">$12.00</span>
@@ -308,7 +308,7 @@
                                 Tucked in between three soft buns are two all-beef patties, cheddar cheese, ketchup,
                                 onion, pickles and iceberg lettuce. Hesburger’s own paprika and cucumber mayonnaise add
                                 the crowning touch. Oh baby!</p>
-                            <div class="d-flex justify-content-between">
+                            <div class="d-flex justify-content-between mt-3">
                                 <div class="price">
                                     <span class="money">$8.00</span>
                                     <span class="sale">$12.00</span>
@@ -337,42 +337,216 @@
                     ORDER NOW
                 </a>
             </div>
-            <div class="image-sale">
+            <div class="image-sale d-none d-sm-block">
                 <img src="{{ asset('assets/images/image-sale.avif')}}" alt="Sale">
             </div>
         </div>
     </div>
     <div class="top-product">
         <div class="top-recipes">
-            <div class="wp_des d-flex justify-content-between align-items-center">
-                <h2>Top recipes</h2>
-                <div class="btn-product">
-                    <a class="btn-title" href="/collections/all">
-                        See all
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </a>
-                </div>
-            </div>
             <div class="container">
                 <div class="row">
-                    <div class="product-item col-md-6">
-                        <div class="image">
-                            <img src="{{ asset('assets/products/top-item1.webp')}}" alt="Top Product">
+                    <div class="product-list">
+                        <div class="wp_des">
+                            <h2>Top recipes</h2>
+                            <div class="btn-product">
+                                <a href="#">
+                                    See all
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
                         </div>
-                        <div class="review">
-                            <h5>BBQ chicken breast 4</h5>
-                            <p>Pasta</p>
-                            <span class="price">$12.00</span>
+                        <div class="list row">
+                            <div class="col-md-6">
+                                <div class="card-wrapper">
+                                    <div class="image">
+                                        <img width="120px" src="{{ asset('assets/products/top-item1.webp')}}"
+                                            alt="Top Product">
+                                    </div>
+                                    <div class="review">
+                                        <h5><a href="#">BBQ chicken breast 4</a></h5>
+                                        <p>Pasta</p>
+                                        <span class="price">$12.00</span>
+                                    </div>
+                                    <div class="cart">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-wrapper">
+                                    <div class="image">
+                                        <img width="120px" src="{{ asset('assets/products/top-item2.webp')}}"
+                                            alt="Top Product">
+                                    </div>
+                                    <div class="review">
+                                        <h5><a href="#">BBQ chicken breast 4</a></h5>
+                                        <p>Pasta</p>
+                                        <span class="price">$12.00</span>
+                                    </div>
+                                    <div class="cart">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-wrapper">
+                                    <div class="image">
+                                        <img width="120px" src="{{ asset('assets/products/top-item1.webp')}}"
+                                            alt="Top Product">
+                                    </div>
+                                    <div class="review">
+                                        <h5><a href="#">BBQ chicken breast 4</a></h5>
+                                        <p>Pasta</p>
+                                        <span class="price">$12.00</span>
+                                    </div>
+                                    <div class="cart">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-wrapper">
+                                    <div class="image">
+                                        <img width="120px" src="{{ asset('assets/products/top-item2.webp')}}"
+                                            alt="Top Product">
+                                    </div>
+                                    <div class="review">
+                                        <h5><a href="#">BBQ chicken breast 4</a></h5>
+                                        <p>Pasta</p>
+                                        <span class="price">$12.00</span>
+                                    </div>
+                                    <div class="cart">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-wrapper">
+                                    <div class="image">
+                                        <img width="120px" src="{{ asset('assets/products/top-item2.webp')}}"
+                                            alt="Top Product">
+                                    </div>
+                                    <div class="review">
+                                        <h5><a href="#">BBQ chicken breast 4</a></h5>
+                                        <p>Pasta</p>
+                                        <span class="price">$12.00</span>
+                                    </div>
+                                    <div class="cart">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-wrapper">
+                                    <div class="image">
+                                        <img width="120px" src="{{ asset('assets/products/top-item1.webp')}}"
+                                            alt="Top Product">
+                                    </div>
+                                    <div class="review">
+                                        <h5><a href="#">BBQ chicken breast 4</a></h5>
+                                        <p>Pasta</p>
+                                        <span class="price">$12.00</span>
+                                    </div>
+                                    <div class="cart">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="cart">
-                            <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="product-banner d-none d-lg-block">
+                        <div class="img">
+                            <img src="{{ asset('assets/images/banner-chicken.webp')}}" alt="Banner">
+                        </div>
+                        <div class="right-content">
+                            <div class="sub-title">Super Delicious</div>
+                            <h2 class="title">CHICKEN</h2>
+                            <p class="description"><span>call us now:</span>
+                                <br>
+                                1-800-555-333
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="banner">
-
+    </div>
+    <div class="blog-post">
+        <div class="container">
+            <div class="wp_des">
+                <h2 class="section-header">Latest news</h2>
+                <div class="btn-product">
+                    <a href="#">
+                        See all
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="blog-list">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-4 mb-3">
+                        <div class="blog-item">
+                            <div class="blog-link">
+                                <a href="#">
+                                    <img width="100%" src="{{ asset('assets/images/blog-item1.webp') }}" alt="Blog Image">
+                                </a>
+                            </div>
+                            <div class="blog-content">
+                                <h2 class="blog-title">
+                                    <a href="#">
+                                        10 Reasons To Do A Digital Detox
+                                    </a>
+                                </h2>
+                                <p class="blog-description">The Ultimate Hangover Burger: Egg in a Hole Burger Grilled Cheese Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed The Ultimate Hangover Burger: Egg in a Hole Burger Grilled Cheese Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+                                <a class="btn-base" href="#">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 mb-3">
+                        <div class="blog-item">
+                            <div class="blog-link">
+                                <a href="#">
+                                    <img width="100%" src="{{ asset('assets/images/blog-item2.webp') }}" alt="Blog Image">
+                                </a>
+                            </div>
+                            <div class="blog-content">
+                                <h2 class="blog-title">
+                                    <a href="#">
+                                        10 Reasons To Do A Digital Detox Challenge
+                                    </a>
+                                </h2>
+                                <p class="blog-description">The Ultimate Hangover Burger: Egg in a Hole Burger Grilled Cheese Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
+                                <a class="btn-base" href="#">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 mb-3">
+                        <div class="blog-item">
+                            <div class="blog-link">
+                                <a href="#">
+                                    <img width="100%" src="{{ asset('assets/images/blog-item2.webp') }}" alt="Blog Image">
+                                </a>
+                            </div>
+                            <div class="blog-content">
+                                <h2 class="blog-title">
+                                    <a href="#">
+                                        10 Reasons To Do A Digital Detox Challenge
+                                    </a>
+                                </h2>
+                                <p class="blog-description">The Ultimate Hangover Burger: Egg in a Hole Burger Grilled Cheese Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
+                                <a class="btn-base" href="#">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

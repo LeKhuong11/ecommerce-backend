@@ -349,4 +349,12 @@
         flex-direction: column;
         justify-content: center;
     }
+
+    .shadow-none {
+        box-shadow: none;
+    }
+
+    .active {
+        color: $yellow;
+    }
 }

@@ -1,0 +1,222 @@
+@import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+@import 'variable';
+@import 'header';
+@import 'home';
+@import "modules/app";
+@import 'footer';
+
+
+
+#main {
+    margin-top: 105px;
+
+    p {
+        margin: 0 !important;
+    }
+
+    .btn-base {
+        font-size: 17px;
+        line-height: 20px;
+        padding: 16px 32px;
+        background-color: #ffc222;
+        border-radius: 8px;
+        font-family: fantasy;
+        display: block;
+        width: -moz-max-content;
+        width: max-content;
+
+        &:hover {
+            color: #fff;
+            transition: all .1s linear;
+        }
+    }
+
+    .products {
+        margin-bottom: 40px;
+
+        .section-header {
+            font-size: 30px;
+            line-height: 36px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            font-weight: 800;
+            font-family: cursive;
+            text-align: center;
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .product-item {
+            border: 1px solid #e5e5e5;
+            border-radius: 30px;
+            padding: 10px;
+            position: relative;
+            margin-bottom: 20px;
+
+            .img {
+                padding: 20px 0;
+                position: relative;
+                a {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    
+                    img {
+                        padding: 20px 0;
+                    }
+                }
+                .sale {
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                    padding: 2.5px 10px;
+                    transform: none;
+                    min-width: 40px;
+                    text-align: center;
+                    font-size: 13px;
+                    font-weight: 700;
+                    background-color: #1e1d23;
+                    border-radius: 30px;
+                    font-family: cursive;
+
+                    span {
+                        color: #fff;
+                    }
+                }
+                .heart {
+                    cursor: pointer;
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+
+                    svg {
+                        font-size: 24px;
+                        color: #8b8b8b;
+                    }
+                }
+
+                .features {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-40%);
+                    right: -15px;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all .25s linear;
+                    
+                    div {
+                        background-color: #fff;
+                        border-radius: 50%;
+                        width: 40px;
+                        height: 40px;
+                        margin: 10px 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        color: #1e1d23;
+                        
+                        &:hover {
+                            background-color: #1e1d23;
+                            color: #fff;
+                            transition: all .3s linear;
+                        }
+                    }
+
+
+                }
+
+                &::after {
+                    content: "";
+                    width: 100%;
+                    height: 50%;
+                    border-radius: 20px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    background-color: #ffc222;
+                    opacity: .1;
+                    transition: all ease .35s;
+                    z-index: -1;
+                }
+            }
+
+            .review {
+                padding: 20px 10px 10px;
+
+                a {
+                    color: #1e1d23;
+                    text-decoration: none;
+                }
+
+                p {
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    display: -webkit-box;
+                    height: 100%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    font-size: 14px;
+                    color: #7c7c7c;
+                }
+
+                .price {
+
+                    .money {
+                        font-size: 24px;
+                        color: #ffc222;
+                        font-family: inherit;
+                        font-weight: 800;
+                    }
+
+                    .sale {
+                        text-decoration: line-through;
+                        color: #999999;
+                        font-size: 15px;
+                        font-weight: 600;
+                        margin-bottom: 3px;
+                    }
+                }
+
+                .cart {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 10px;
+                    background-color: #ffc222;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            &:hover {
+                .img::after {
+                    height: 100%;
+                    background-color: #ffc222;
+                    opacity: .9;
+                }
+
+                .features {
+                    right: 10px;
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+
+    .text-justify {
+        text-align: justify;
+    }
+    .box-shadow {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
