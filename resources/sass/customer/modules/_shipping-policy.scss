@@ -1,0 +1,39 @@
+
+#shipping-policy {
+    font-family: unset;
+    margin: 50px 0;
+
+    h3 {
+        font-weight: 700;
+    }
+
+    .content {
+        padding: 10px;
+        font-size: 1rem;
+        
+        h5 {
+            font-weight: 700;
+            font-size: 1rem;
+            padding-top: 17px;
+        }
+
+        p, li {
+            text-align: justify;
+            font-size: 15px;
+            color: #646464;
+            padding: 4px;
+            text-decoration: none;
+        }
+    }
+    
+    .fw-700 {
+        font-weight: 700;
+    }
+    .text-black {
+        color: #484848 !important;
+    }
+    .font-italic {
+        font-style: italic;
+    }
+
+}

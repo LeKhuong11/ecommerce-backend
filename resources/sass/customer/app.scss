@@ -10,7 +10,7 @@
 
 
 #main {
-    margin-top: 105px;
+    padding-top: 105px;
 
     p {
         margin: 0 !important;
@@ -220,3 +220,7 @@ a {
     text-decoration: none;
     color: #000;
 }
+::selection {
+    color: #fff;
+    background-color: rgb(57, 215, 255); /* Màu nền khi tô đen */
+  }
