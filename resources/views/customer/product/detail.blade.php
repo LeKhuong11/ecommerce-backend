@@ -48,7 +48,7 @@
                             <span class="money">$8.00</span>
                             <p class="sale px-2">$12.00</p>
                         </div>
-                        <form action="" method="POST">
+                        <form action="">
                             <div class="size">
 
                                 <p>Size</p>

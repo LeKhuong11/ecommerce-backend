@@ -1,0 +1,78 @@
+
+#about {
+
+    .about {
+
+        h2 {
+            font-family: fantasy;
+        }
+        p {
+            color: #656565;
+        }
+
+        .service {
+            h3 {
+                font-weight: 700;
+            }
+
+            .service-content{
+                background-color: #fff;
+                text-align: center;
+                padding: 15px;
+                
+    
+                h5 {
+                    font-weight: 700;
+                    padding: 8px 0;
+                    color: #4b4b4b;
+                }
+    
+                svg {
+                    font-size: 38px;
+                    color: #4b4b4b;
+                }
+            }
+        }
+
+        .about-section{
+
+            h5 {
+                font-size: 15px;
+                text-transform: uppercase;
+                font-weight: 700;
+                margin: 0 0 5px;
+                line-height: 22px;
+            }
+
+            span {
+                font-size: 12px;
+                text-transform: uppercase;
+                font-weight: 100;
+                color: #b0b0b0;
+                line-height: 22px;
+                font-weight: 700;
+            }
+
+            p {
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                display: -webkit-box;
+                height: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .contact {
+
+                svg {
+                    font-size: 20px;
+                    color: #b0b0b0;
+
+                    &:hover {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}

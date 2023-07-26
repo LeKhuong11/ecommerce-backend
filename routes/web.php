@@ -3,8 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Customer\HomeController;
 use App\Http\Controllers\Customer\ProductController;
-use App\Http\Controllers\Customer\PrivacyController;
-use App\Http\Controllers\Customer\ShippingPolicyController;
+use App\Http\Controllers\Customer\PolicyController;
+use App\Http\Controllers\Customer\ContactController;
+use App\Http\Controllers\Customer\AboutController;
+use App\Http\Controllers\Customer\Auth\LoginController;
 
 
 /*
@@ -19,6 +21,15 @@ use App\Http\Controllers\Customer\ShippingPolicyController;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('customer.home');
+Route::get('/contact', [ContactController::class, 'index'])->name('customer.contact');
+Route::get('/about', [AboutController::class, 'index'])->name('customer.about');
+Route::get('/login', [LoginController::class, 'index'])->name('customer.login');
 Route::get('/product/detail/123', [ProductController::class, 'index'])->name('customer.detail');
-Route::get('/privacy-policy', [PrivacyController::class, 'index'])->name('customer.privacy');
-Route::get('/shipping-policy', [ShippingPolicyController::class, 'index'])->name('customer.shipping-policy');
+
+Route::prefix('page')->group(function () {
+    Route::get('/privacy-policy', [PolicyController::class, 'privacyPolicy'])->name('customer.privacy-policy');
+    Route::get('/shipping-policy', [PolicyController::class, 'shippingPolicy'])->name('customer.shipping-policy');
+    Route::get('/payment-policy', [PolicyController::class, 'paymentPolicy'])->name('customer.payment-policy');
+    Route::get('/return-policy', [PolicyController::class, 'returnPolicy'])->name('customer.return-policy');
+    Route::get('/shopping-guide', [PolicyController::class, 'shoppingGuide'])->name('customer.shopping-guide');
+});

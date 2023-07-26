@@ -211,8 +211,25 @@
     .text-justify {
         text-align: justify;
     }
-    .box-shadow {
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    .breadcrumb{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f4efe9;
+        padding: 12px 0;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px 15px;
+        border: 1px solid #555555;
+        margin: 5px;
+    }
+    input:focus {
+        border: 1px solid #333;
+        list-style: none;
     }
 }
 
@@ -220,7 +237,10 @@ a {
     text-decoration: none;
     color: #000;
 }
+.box-shadow {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 ::selection {
     color: #fff;
     background-color: rgb(57, 215, 255); /* Màu nền khi tô đen */
-  }
+}

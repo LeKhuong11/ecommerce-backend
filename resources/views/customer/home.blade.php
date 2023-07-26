@@ -499,7 +499,7 @@
                                     </a>
                                 </h2>
                                 <p class="blog-description">The Ultimate Hangover Burger: Egg in a Hole Burger Grilled Cheese Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed The Ultimate Hangover Burger: Egg in a Hole Burger Grilled Cheese Lorem ipsum dolor sit amet, consectetur adipisicing </p>
-                                <a class="btn-base" href="#">
+                                <a class="btn-base mt-3" href="#">
                                     Read More
                                 </a>
                             </div>
@@ -519,7 +519,7 @@
                                     </a>
                                 </h2>
                                 <p class="blog-description">The Ultimate Hangover Burger: Egg in a Hole Burger Grilled Cheese Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
-                                <a class="btn-base" href="#">
+                                <a class="btn-base mt-3" href="#">
                                     Read More
                                 </a>
                             </div>
@@ -539,7 +539,7 @@
                                     </a>
                                 </h2>
                                 <p class="blog-description">The Ultimate Hangover Burger: Egg in a Hole Burger Grilled Cheese Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
-                                <a class="btn-base" href="#">
+                                <a class="btn-base mt-3" href="#">
                                     Read More
                                 </a>
                             </div>

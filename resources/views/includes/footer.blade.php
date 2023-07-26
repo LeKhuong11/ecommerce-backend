@@ -37,17 +37,20 @@
                 </div> -->
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="text-content">
-                        <h2 class="title-footer">ABOUT US</h2>
+                        <h2 class="title-footer">CUSTOMER SUPPORT</h2>
                         <ul class="list-content-footer p-0">
-                            <li><a class="text-white" href="{{ route('customer.shipping-policy') }}">Shipping policy</a></li>
-                            <li><a class="text-white" href="{{ route('customer.privacy') }}">Privacy  policy</a></li>
+                            <li><a href="{{ route('customer.shipping-policy') }}">Shipping policy</a></li>
+                            <li><a href="{{ route('customer.privacy-policy') }}">Privacy policy</a></li>
+                            <li><a href="{{ route('customer.payment-policy') }}">Payment policy</a></li>
+                            <li><a href="{{ route('customer.return-policy') }}">Return policy</a></li>
+                            <li><a href="{{ route('customer.shopping-guide') }}">Shopping guide</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="text-content">
                         <h2 class="title-footer">OPENING HOURS</h2>
-                        <ul class="list-content-footer p-0">
+                        <ul class="list-content-footer p-0">    
                             <li class="d-flex">
                                 Monday – Friday:
                                 <strong class="text-white">8am – 4pm</strong>

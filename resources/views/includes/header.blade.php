@@ -22,12 +22,12 @@
                         <ul class="d-flex m-0">
                             <li><a class="{{ in_array($segment_check, array('')) ? 'active' : ''}}" href="{{ route('customer.home')}}">Home</a></li>
                             <li><a class="{{ in_array($segment_check, array('menu')) ? 'active' : ''}}" href="#">Menu</a></li>
-                            <li><a class="{{ in_array($segment_check, array('about')) ? 'active' : ''}}" href="#">About</a></li>
+                            <li><a class="{{ in_array($segment_check, array('about')) ? 'active' : ''}}" href="{{ route('customer.about') }}">About</a></li>
                             <li><a class="{{ in_array($segment_check, array('shop')) ? 'active' : ''}}" href="#">Shop</a></li>
                             <li><a class="{{ in_array($segment_check, array('blog')) ? 'active' : ''}}" href="#">Blog</a></li>
                             <li class="pages position-relative">
                                 <a href="#">Page <i class="fa-solid fa-chevron-down"></i></a>
-                                <div class="mini-pages">
+                                <div class="mini-pages box-shadow">
                                     <h5 class="m-0">PAGES</h5>
                                     <ul class="p-0">
                                         <li><a href="#">About us</a></li>
@@ -39,7 +39,7 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li><a class="{{ in_array($segment_check, array('contact')) ? 'active' : ''}}" href="#">Contact</a></li>
+                            <li><a class="{{ in_array($segment_check, array('contact')) ? 'active' : ''}}" href="{{ route('customer.contact')}}">Contact</a></li>
                         </ul>
                     </div>
                     <div class="header-icon d-flex p-0 p-lg-3">
@@ -50,27 +50,26 @@
                             </div>
                             <div class="des-call">+1 718-904-4450</div>
                         </div>
-                        <div class="header-signin px-2 px-lg-3">
+                        <div class="header-signin px-2 px-lg-2">
                             <div class="button login">
                                 <i class="fa-solid fa-user-large text-dark"></i>
                             </div>
-                            <div class="mini-acount">
-                                <p><a href="#">Sign in</a></p>
+                            <div class="mini-acount box-shadow box-shadow">
+                                <p><a href="{{ route('customer.login') }}">Sign in</a></p>
                                 <p><a href="#" title="Register">Register</a></p>
                                 <p><a href="#" title="Wishlist">Wishlist (<span>1</span>)</a></p>
-                                <p><a href="#" title="Compare">Compare (<span
-                                            class="js-compare-count text-center">0</span>)</a></p>
+                                <p><a href="#" title="Compare">Compare (<span class="text-center">0</span>)</a></p>
                                 <p><a href="#" title="Checkout">Checkout</a></p>
                             </div>
                         </div>
-                        <div class="header-cart">
+                        <div class="header-cart ">
                             <div class="button cart">
                                 <a href="#"><i class="fas fa-shopping-basket text-dark"></i></a>
                             </div>
                             <div class="cart-count-bubble">
                                 <span aria-hidden="true">4</span>
                             </div>
-                            <div class="mini-cart">
+                            <div class="mini-cart box-shadow">
                                 <div class="list-minicart">
                                     <div class="minicart-item d-flex align-items-center justify-content-between">
                                         <div class="d-flex align-items-center">
@@ -200,7 +199,7 @@
                                         </div>
                                     </li>
                                     <hr>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="{{ route('customer.contact') }}">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
