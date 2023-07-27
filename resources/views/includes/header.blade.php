@@ -59,7 +59,7 @@
                                 <p><a href="#" title="Register">Register</a></p>
                                 <p><a href="#" title="Wishlist">Wishlist (<span>1</span>)</a></p>
                                 <p><a href="#" title="Compare">Compare (<span class="text-center">0</span>)</a></p>
-                                <p><a href="#" title="Checkout">Checkout</a></p>
+                                <p><a href="{{ route('customer.cart') }}" title="Checkout">Checkout</a></p>
                             </div>
                         </div>
                         <div class="header-cart ">
@@ -134,7 +134,7 @@
                                 </div>
                                 <div class="button-minicart">
                                     <div class="gotocart-btn">
-                                        <a href="#">Go to Cart</a>
+                                        <a href="{{ route('customer.cart') }}">Go to Cart</a>
                                     </div>
 
                                     <div class="checkout-btn">

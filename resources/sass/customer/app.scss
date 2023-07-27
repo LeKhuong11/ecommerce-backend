@@ -208,6 +208,10 @@
         }
     }
 
+    .pointer {
+        cursor: pointer;
+    }
+
     .text-justify {
         text-align: justify;
     }
@@ -223,13 +227,17 @@
 
     input, textarea {
         width: 100%;
-        padding: 10px 15px;
+        padding: 15px;
         border: 1px solid #555555;
-        margin: 5px;
     }
     input:focus {
         border: 1px solid #333;
         list-style: none;
+    }
+
+    h2 {
+        font-weight: 700;
+        font-family: fantasy;
     }
 }
 

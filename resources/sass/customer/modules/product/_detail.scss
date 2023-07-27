@@ -71,6 +71,10 @@
         .quantity {
             display: flex;
             
+            svg {
+                color: #6d6d6d;
+            }
+            
             button {
                 background: #fff;
                 border: 1px solid #cacaca;

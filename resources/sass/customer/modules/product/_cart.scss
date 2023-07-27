@@ -1,0 +1,105 @@
+#cart {
+    padding-bottom: 10rem;
+
+    .cart-items {
+        width: 100%;
+        margin-top: 25px;
+
+        .item-img {
+            width: 150px;
+        }
+
+        .sale {
+            text-decoration: line-through;
+            color: #6e6e6e;
+        }
+
+        .quantity {
+            display: flex;
+            padding-right: 20px;
+
+            svg {
+                color: #6d6d6d;
+            }
+
+            button {
+                background: #fff;
+                border: 1px solid #cacaca;
+                width: 45px;
+                height: 45px;
+                padding: 7px 0;
+            }
+
+            input {
+                width: 40px;
+                padding: 0 13px;
+                border: 1px solid #cacaca;
+                border-left-width: 0;
+                border-right-width: 0;
+                padding: 7px 15px;
+                height: 45px;
+            }
+            input:focus {
+                outline: none;
+            }
+        }
+
+        .trash {
+            color: #6d6d6d;
+            cursor: pointer;
+
+            &:hover {
+                color: #000;
+            }
+        }
+
+        td {
+            padding: 8px 0;
+        }
+
+        th {
+            text-align: left;
+            opacity: .85;
+            padding-bottom: 10px;
+            font-weight: 400;    
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        th, td {
+            border-bottom: 1px solid antiquewhite !important;
+        }
+    }
+
+    .sub-total {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin-top: 20px;
+
+        h5 {
+            font-weight: 700;
+            font-family: cursive;
+            padding-right: 15px;
+        }
+        span {
+            font-weight: 500;
+        }
+        p {
+            color: #6a6a6a;
+            padding: 15px 0;
+        }
+        a {
+            width: 250px;
+            height: 60px;
+            border: 1px solid #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                border: 2px solid #333;
+            }
+        }
+    }
+}

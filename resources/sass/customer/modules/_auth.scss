@@ -1,0 +1,43 @@
+#login-register-user {
+
+    .login, .register {
+        max-width: 30rem;
+        margin: 4rem auto 14rem;
+        a {
+            text-decoration: underline;
+            color: #4d4d4d;
+        }
+
+        input {
+            margin-top: 15px;
+        }
+
+        button {
+            cursor: pointer;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            font: inherit;
+            padding: 0.9rem 3rem 1.1rem;
+            text-decoration: none;
+            border: 0;
+            border-radius: 0;
+            background-color: #000;
+            color: #fff;
+            width: 10rem;
+            height: 3rem;
+            transition: box-shadow 100ms ease;
+            -webkit-appearance: none;
+            appearance: none;
+            margin: 15px 0 5px;
+            transition: transform .2s linear;
+            &:hover  {
+                transform: scale(1.05);
+            }
+        }
+        .link {
+            padding: 8px 0;
+        }
+    }
+}
