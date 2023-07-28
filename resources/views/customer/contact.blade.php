@@ -7,7 +7,7 @@
 @section('content')
     <div id="contact" class="bg-light py-5">    
         <div class="container p-4 bg-white box-shadow">
-            <h2 class="text-center mb-4">Liên hệ với chúng tôi</h2>
+            <h2 class="text-center mb-4">Contact Us</h2>
             <div class="contact border p-4">
                 <div class="row">
                     <div class="col-lg-8">

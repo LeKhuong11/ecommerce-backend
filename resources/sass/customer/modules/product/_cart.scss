@@ -1,57 +1,68 @@
 #cart {
     padding-bottom: 10rem;
 
-    .cart-items {
+    .table {
         width: 100%;
         margin-top: 25px;
 
-        .item-img {
-            width: 150px;
-        }
+        .cart-item {
 
-        .sale {
-            text-decoration: line-through;
-            color: #6e6e6e;
-        }
-
-        .quantity {
-            display: flex;
-            padding-right: 20px;
-
-            svg {
+            .name {
+                &:hover {
+                    color: #ffc222;
+                    text-decoration: underline;
+                }
+            }
+            .item-img {
+                width: 150px;
+            }
+    
+            .sale {
+                text-decoration: line-through;
+                color: #6e6e6e;
+            }
+    
+            .quantity {
+                display: flex;
+                padding-right: 20px;
+    
+                svg {
+                    color: #6d6d6d;
+                }
+    
+                button {
+                    background: #fff;
+                    border: 1px solid #cacaca;
+                    width: 45px;
+                    height: 45px;
+                    padding: 7px 0;
+                }
+    
+                input {
+                    width: 40px;
+                    padding: 0 13px;
+                    border: 1px solid #cacaca;
+                    border-left-width: 0;
+                    border-right-width: 0;
+                    padding: 7px 15px;
+                    height: 45px;
+                }
+                input:focus {
+                    outline: none;
+                }
+            }
+    
+            .trash {
                 color: #6d6d6d;
-            }
-
-            button {
-                background: #fff;
-                border: 1px solid #cacaca;
-                width: 45px;
-                height: 45px;
-                padding: 7px 0;
-            }
-
-            input {
-                width: 40px;
-                padding: 0 13px;
-                border: 1px solid #cacaca;
-                border-left-width: 0;
-                border-right-width: 0;
-                padding: 7px 15px;
-                height: 45px;
-            }
-            input:focus {
-                outline: none;
+                cursor: pointer;
+    
+                &:hover {
+                    color: #000;
+                }
             }
         }
 
-        .trash {
-            color: #6d6d6d;
-            cursor: pointer;
-
-            &:hover {
-                color: #000;
-            }
-        }
+        
 
         td {
             padding: 8px 0;
@@ -68,6 +79,22 @@
 
         th, td {
             border-bottom: 1px solid antiquewhite !important;
+        }
+
+        @media (max-width: 767px) {
+            .hide-on-mobile {
+                display: none;
+            }
+
+            .cart-item {
+                .item-img {
+                    width: 100px;
+                }
+            }
+            
+            .hide {
+                visibility: hidden;
+            }
         }
     }
 
