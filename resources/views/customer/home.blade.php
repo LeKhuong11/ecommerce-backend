@@ -549,5 +549,36 @@
             </div>
         </div>
     </div>
+    <!-- Modal View -->
+    <div class="modal modal-lg fade position-relative" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header pointer">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img width="100%" src="{{ asset('assets/images/img_modal.webp') }}" alt="">
+                    <div class="w-75  mt-3">
+                        <h3>JOIN OUR NEWLETTER AND GET 20% DISCOUNT</h3>
+                        <p>This website uses cookies to ensure you get the best experience on our website.</p>
+                        <form action="">
+                            <input type="text" placeholder="Your Email..."> 
+                            <button type="submit" class="btn-base">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<script type="text/javascript">
+    $(window).on('load', function() {
+        const showModal = sessionStorage.getItem("showModal");
+
+        if(showModal !== "false") {
+            $('#myModal').modal('show');
+            sessionStorage.setItem("showModal", false);
+        }
+    });
+</script>
 @endsection

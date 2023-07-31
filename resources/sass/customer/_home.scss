@@ -535,4 +535,55 @@
         text-decoration: none;
         color: #1e1d23;
     }
+
+    .modal {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+
+        .modal-content {
+            
+            
+            border-radius: 5px;
+
+            .modal-header {
+                z-index: 99;
+                position: absolute;
+                top: 0;
+                right: 0;
+                border: none !important;
+            }
+
+            .modal-body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                form {
+                    margin-top: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    input {
+                        padding: 7px !important; 
+                        width: 60% !important;
+
+                    }
+
+                    button {
+                        border: none;
+                        margin-top: 15px;
+                        color: #fff
+                    }
+                }
+
+                h3 {
+                    font-weight: 700;
+                    font-family: fantasy;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
 }

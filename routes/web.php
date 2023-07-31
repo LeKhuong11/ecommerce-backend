@@ -6,6 +6,7 @@ use App\Http\Controllers\Customer\ProductController;
 use App\Http\Controllers\Customer\PolicyController;
 use App\Http\Controllers\Customer\ContactController;
 use App\Http\Controllers\Customer\AboutController;
+use App\Http\Controllers\Customer\BranchController;
 use App\Http\Controllers\Customer\Auth\LoginController;
 use App\Http\Controllers\Customer\Auth\SignupController;
 use App\Http\Controllers\Customer\Auth\CartController;
@@ -28,6 +29,7 @@ Route::get('/about', [AboutController::class, 'index'])->name('customer.about');
 Route::get('/login', [LoginController::class, 'index'])->name('customer.login');
 Route::get('/signup', [SignupController::class, 'index'])->name('customer.signup');
 Route::get('/cart', [CartController::class, 'index'])->name('customer.cart');
+Route::get('/branches', [BranchController::class, 'index'])->name('customer.branch');
 Route::get('/product/detail/123', [ProductController::class, 'index'])->name('customer.detail');
 
 Route::prefix('page')->group(function () {

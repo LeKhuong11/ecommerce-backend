@@ -1,0 +1,45 @@
+#branch {
+
+    h4 {
+        font-weight: 700;
+    }
+    p, span {
+        color: #666666;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        background-color: #323232;
+        border-radius: 1px;
+        line-height: 44px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        color: #f2f2f2;
+        padding: 11px 10px 12px;
+        text-align: center;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+
+    .address {
+
+        .select2-selection {
+            height: 50px !important;
+            padding: 8px 0 !important;
+            border-radius: 0 !important;
+        }
+
+        .select2-selection__arrow {
+            display: flex !important;
+            align-items: center !important;
+            height: 100% !important;
+        }
+    }
+    .container {
+        margin-bottom: 70px !important;
+    }
+}

@@ -1,5 +1,6 @@
 @import '~bootstrap/scss/bootstrap';
 @import '~@fortawesome/fontawesome-free/css/all.css';
+@import '~select2/dist/css/select2.min.css';
 
 @import 'variable';
 @import 'header';
@@ -223,6 +224,12 @@
         align-items: center;
         background-color: #f4efe9;
         padding: 12px 0;
+
+        p {
+            color: #666666;
+            font-size: 14px;
+            font-weight: 600;
+        }
     }
 
     input, textarea {
@@ -238,6 +245,9 @@
     h2 {
         font-weight: 700;
         font-family: fantasy;
+    }
+    .pointer {
+        cursor: pointer;
     }
 }
 

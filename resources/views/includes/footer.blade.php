@@ -18,6 +18,7 @@
                                 <br>
                                 United States
                             </li>
+                            <li><a href="{{ route('customer.branch') }}">Branches</a></li>
                         </ul>
                     </div>
                 </div>
