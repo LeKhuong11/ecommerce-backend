@@ -19,7 +19,7 @@
                                 <i class="fa-solid fa-bars"></i>
                             </div>
                         </button>
-                        <ul class="d-flex m-0">
+                        <ul class="d-flex m-0 p-0">
                             <li><a class="{{ in_array($segment_check, array('')) ? 'active' : ''}}" href="{{ route('customer.home')}}">Home</a></li>
                             <li><a class="{{ in_array($segment_check, array('menu')) ? 'active' : ''}}" href="#">Menu</a></li>
                             <li><a class="{{ in_array($segment_check, array('about')) ? 'active' : ''}}" href="{{ route('customer.about') }}">About</a></li>
@@ -43,7 +43,7 @@
                         </ul>
                     </div>
                     <div class="header-icon d-flex p-0 p-lg-3">
-                        <div class="header-call d-none d-lg-block">
+                        <div class="header-call d-none d-xxl-block">
                             <div class="title-call">
                                 Call and Order in
                                 <p class="address">London</p>
@@ -56,7 +56,7 @@
                             </div>
                             <div class="mini-acount box-shadow box-shadow">
                                 <p><a href="{{ route('customer.login') }}">Sign in</a></p>
-                                <p><a href="#" title="Register">Register</a></p>
+                                <p><a href="{{ route('customer.signup') }}" title="Register">Register</a></p>
                                 <p><a href="#" title="Wishlist">Wishlist (<span>1</span>)</a></p>
                                 <p><a href="#" title="Compare">Compare (<span class="text-center">0</span>)</a></p>
                                 <p><a href="{{ route('customer.cart') }}" title="Checkout">Checkout</a></p>

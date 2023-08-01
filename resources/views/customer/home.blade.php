@@ -82,6 +82,43 @@
             </div>
         </div>
     </div>
+    <div class="banner py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="item1 col-lg-4 d-flex justify-content-center mt-3">
+                    <div class="banner-img">
+                        <img src=" {{ asset('assets/images/banner-1.avif') }}" alt="Banner" width="100%">
+                        <div class="banner-content">
+                            <h3>Any day  <br> offers</h3>
+                            <h5>new  phenomenon <br> burger taste</h5>
+                            <p><span>$12.90</span></p>
+                            <p class="banner-description"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item2 col-lg-4 d-flex justify-content-center mt-3">
+                    <div class="banner-img">
+                        <img src=" {{ asset('assets/images/banner-2.avif') }}" alt="Banner" width="100%">
+                        <div class="banner-content">
+                            <h3>OTHER <br> FLAVORS</h3>
+                            <h5>SAVE ROOM. <br> WE MADE SALATS</h5>
+                            <p><span>$12.90</span></p>
+                            <p class="banner-description"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item3 col-lg-4 d-flex justify-content-center mt-3">
+                    <div class="banner-img">
+                        <img src=" {{ asset('assets/images/banner-3.avif') }}" alt="Banner" width="100%">
+                        <div class="banner-content">
+                            <h3>FIND A POCO <br> STORE <br> NEAR YOU</h3>
+                            <p class="banner-description"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="products">
         <div class="container">
             <h2 class="section-header">Popular dishes</h2>

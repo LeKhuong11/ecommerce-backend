@@ -39,7 +39,7 @@
             padding-left: 15px;
 
             span {
-                color: #ffcc00;
+                color: $yellow;
             }
             h4 {
                 font-size: 76px;
@@ -143,7 +143,7 @@
         position: relative;
         .section-header {
             font-size: 14px;
-            background-color: #ffc222;
+            background-color: $yellow;
             border-radius: 8px;
             padding: 16px 48px;
             width: max-content;
@@ -156,12 +156,13 @@
 
         .menu-list {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             padding: 15px 0;
             margin-bottom: 50px;
 
             .item {
-                margin: 0 27px;
+                margin: 15px 27px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -185,7 +186,7 @@
                 .circle {
                     width: 10px;
                     height: 10px;
-                    background-color: #ffc222;
+                    background-color: $yellow;
                     border-radius: 50%;
                     position: absolute;
                     top: 35%;
@@ -201,6 +202,65 @@
                         transform: scale(9.2);
                     }
                 }
+            }
+        }
+    }
+
+    .banner {
+        background-color: #d3d3d3;
+
+        .banner-img {
+            position: relative;
+            overflow: hidden;
+            
+            img {
+                transition: all .4s linear;
+            }
+
+            &:hover {
+                
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .item2 {
+            span {
+                color: $yellow !important;
+            }
+        }
+
+        .banner-content {
+            position: absolute;
+            z-index: 9;
+            top: 0;
+            right: 0;
+            left: 30px;
+            bottom: 0;
+            padding: 14px;
+
+            h3 {
+                font-size: 28px;
+                font-family: fantasy;
+                line-height: 30px;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+                font-weight: 700;
+            }
+            h5 {
+                font-size: 12px;
+                line-height: 20px;
+                text-transform: uppercase;
+                font-weight: 700;
+                margin-bottom: 9px;
+                font-family: cursive;
+            }
+            span {
+                font-size: 20px;
+                font-family: 'FontAwesome';
+                font-weight: 700;
+                color: #00a149;
             }
         }
     }
@@ -229,7 +289,7 @@
                 font-size: 120px;
                 text-transform: uppercase;
                 line-height: 125px;
-                color: #ffc222;
+                color: $yellow;
                 margin-bottom: 40px;
                 font-family: 'FontAwesome';
                 font-weight: 600;
@@ -249,7 +309,7 @@
                 font-family: fantasy;
                 
                 &:hover {
-                    color: #ffc222;
+                    color: $yellow;
                 }
             }
 
@@ -331,7 +391,7 @@
                     }
                     .price {
                         font-weight: 700;
-                        color: #ffcc00;
+                        color: $yellow;
                         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                     }
 
@@ -339,7 +399,7 @@
                         margin: 0;
                         &:hover {
                             a {
-                                color: #ffc222;
+                                color: $yellow;
                             }
                         }
                     }
@@ -349,7 +409,7 @@
                     width: 40px;
                     height: 40px;
                     border-radius: 10px;
-                    background-color: #ffc222;
+                    background-color: $yellow;
                     cursor: pointer;
                     display: flex;
                     justify-content: center;
@@ -376,7 +436,7 @@
                     top: 10px;
                     right: 10px;
                     bottom: 10px;
-                    background-color: #ffc222;
+                    background-color: $yellow;
                     opacity: .1;
                     z-index: 0;
                 }
@@ -526,7 +586,7 @@
 
         &:hover {
             a {
-                color: #ffc222;
+                color: $yellow;
             }
         }
     }

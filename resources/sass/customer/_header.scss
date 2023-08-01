@@ -21,8 +21,13 @@
                 font-weight: 700;
                 font-size: 15.5px;
                 padding: 17px;
+
                 svg {
                     font-size: 10px;
+                }
+
+                @media screen and (max-width: 1200px) {
+                    padding: 12px;
                 }
             }
         }
@@ -306,7 +311,7 @@
         }
     }
 
-    @media screen and (max-width: 1400px) {
+    @media screen and (max-width: 992px) {
         .header-logo {
             order: 1;
         }
@@ -316,6 +321,7 @@
             .bar-btn {
                 display: block;
             }
+            
             ul {
                 display: none !important;
             }
