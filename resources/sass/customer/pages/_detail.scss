@@ -30,7 +30,7 @@
 
             .money {
                 font-size: 27px;
-                color: #ffc222;
+                color: $yellow;
                 font-family: inherit;
                 font-weight: 800;
             }
@@ -51,15 +51,15 @@
             
             input[type="radio"]:checked {
                 & + div {
-                  background-color: #000;
-                  color: #fff;
+                  background-color: $black;
+                  color: $white;
                 }
             }
 
             div {
                 width: 39px;
                 height: 42px;
-                border: 1px solid #000;
+                border: 1px solid $black;
                 border-radius: 4px;
                 display: flex;
                 align-items: center;
@@ -76,7 +76,7 @@
             }
             
             button {
-                background: #fff;
+                background: $white;
                 border: 1px solid #cacaca;
                 width: 45px;
                 height: 45px;
@@ -117,7 +117,7 @@
                 svg {
                     font-size: 25px;
                     background: #1da1f2;
-                    color: #fff;
+                    color: $white;
                     padding: 5px;
                     border-radius: 50%;
                 }

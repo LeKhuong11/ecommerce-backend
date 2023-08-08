@@ -4,9 +4,8 @@
 
 @import 'variable';
 @import 'header';
-@import 'home';
-@import "modules/app";
 @import 'footer';
+@import "pages/app";
 
 
 
@@ -21,7 +20,7 @@
         font-size: 17px;
         line-height: 20px;
         padding: 16px 32px;
-        background-color: #ffc222;
+        background-color: $yellow;
         border-radius: 8px;
         font-family: fantasy;
         display: block;
@@ -29,7 +28,7 @@
         width: max-content;
 
         &:hover {
-            color: #fff;
+            color: $white;
             transition: all .1s linear;
         }
     }
@@ -45,7 +44,7 @@
             font-weight: 800;
             font-family: cursive;
             text-align: center;
-            background-color: #fff;
+            background-color: $white;
             margin-bottom: 20px;
         }
 
@@ -83,7 +82,7 @@
                     font-family: cursive;
 
                     span {
-                        color: #fff;
+                        color: $white;
                     }
                 }
                 .heart {
@@ -108,7 +107,7 @@
                     transition: all .25s linear;
                     
                     div {
-                        background-color: #fff;
+                        background-color: $white;
                         border-radius: 50%;
                         width: 40px;
                         height: 40px;
@@ -121,7 +120,7 @@
                         
                         &:hover {
                             background-color: #1e1d23;
-                            color: #fff;
+                            color: $white;
                             transition: all .3s linear;
                         }
                     }
@@ -137,7 +136,7 @@
                     position: absolute;
                     left: 0;
                     bottom: 0;
-                    background-color: #ffc222;
+                    background-color: $yellow;
                     opacity: .1;
                     transition: all ease .35s;
                     z-index: -1;
@@ -167,7 +166,7 @@
 
                     .money {
                         font-size: 24px;
-                        color: #ffc222;
+                        color: $yellow;
                         font-family: inherit;
                         font-weight: 800;
                     }
@@ -185,7 +184,7 @@
                     width: 40px;
                     height: 40px;
                     border-radius: 10px;
-                    background-color: #ffc222;
+                    background-color: $yellow;
                     cursor: pointer;
                     display: flex;
                     justify-content: center;
@@ -196,7 +195,7 @@
             &:hover {
                 .img::after {
                     height: 100%;
-                    background-color: #ffc222;
+                    background-color: $yellow;
                     opacity: .9;
                 }
 
@@ -253,12 +252,12 @@
 
 a {
     text-decoration: none;
-    color: #000;
+    color: $black;
 }
 .box-shadow {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 ::selection {
-    color: #fff;
+    color: $white;
     background-color: rgb(57, 215, 255); /* Màu nền khi tô đen */
 }

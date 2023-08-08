@@ -1,5 +1,5 @@
 
-.home {
+#home {
     position: relative;
     overflow: hidden;
 
@@ -45,7 +45,7 @@
                 font-size: 76px;
                 margin-bottom: 2rem;
                 line-height: 78px;
-                color: #fff;
+                color: $white;
                 text-transform: uppercase;
                 font-family: cursive;
             }
@@ -61,7 +61,7 @@
 
             p {
                 font-size: 18px;
-                color: #fff;
+                color: $white;
                 line-height: 24px;
                 margin-bottom: 30px;
             }
@@ -83,7 +83,7 @@
                 }
 
                 .price-slide-sale {
-                    color: #ffffff61;
+                    color: $white;
                     font-size: 16px;
                     font-family: 'Courier New', Courier, monospace;
                     padding-bottom: 25px;
@@ -304,7 +304,7 @@
                 display: block;
                 width: max-content;
                 padding: 16px 52px;
-                background-color: #fff;
+                background-color: $white;
                 text-decoration: none;
                 font-family: fantasy;
                 
@@ -317,7 +317,7 @@
                 font-family: Norican,cursive;
                 font-size: 42px;
                 line-height: 45px;
-                color: #fff;
+                color: $white;
             }
 
             @media (max-width: 768px){
@@ -367,7 +367,7 @@
                 border: 1px solid #e5e5e5;
                 border-radius: 30px;
                 padding: 10px;
-                background: #fff;
+                background: $white;
                 margin-bottom: 20px;
 
                 .img {
@@ -381,7 +381,7 @@
                     z-index: 2;
                     
                     a {
-                        color: #000;
+                        color: $black;
                         font-family: Norican, cursive;
                     }
                     p {
@@ -422,7 +422,7 @@
                     &:hover {
 
                         svg {
-                            color: #fff;
+                            color: $white;
                             transition: all .2s linear;
                         }
                     }
@@ -468,7 +468,7 @@
                     font-family: Norican, cursive;
                     font-size: 42px;
                     line-height: 45px;
-                    color: #fff;
+                    color: $white;
                 }
 
                 .title {
@@ -489,7 +489,7 @@
 
                     span {
                         font-size: 18px;
-                        color: #fff
+                        color: $white
                     }
                 }
             }
@@ -634,7 +634,7 @@
                     button {
                         border: none;
                         margin-top: 15px;
-                        color: #fff
+                        color: $white
                     }
                 }
 

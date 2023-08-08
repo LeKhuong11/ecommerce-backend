@@ -9,7 +9,7 @@
 
             .name {
                 &:hover {
-                    color: #ffc222;
+                    color: $yellow;
                     text-decoration: underline;
                 }
             }
@@ -31,7 +31,7 @@
                 }
     
                 button {
-                    background: #fff;
+                    background: $white;
                     border: 1px solid #cacaca;
                     width: 45px;
                     height: 45px;
@@ -57,7 +57,7 @@
                 cursor: pointer;
     
                 &:hover {
-                    color: #000;
+                    color: $black;
                 }
             }
         }

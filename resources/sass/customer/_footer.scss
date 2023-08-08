@@ -57,7 +57,7 @@
             text-align: center;
 
             .title-footer {
-                color: #fff;
+                color: $white;
                 font-family: fantasy;
                 font-size: 20px;
                 margin-bottom: 25px;
@@ -69,7 +69,7 @@
             }
 
             .number {
-                color: #ffc222;
+                color: $yellow;
                 font-family: fantasy;
                 font-size: 18px;
                 margin-top: 20px;
@@ -98,7 +98,7 @@
                     background: transparent;
                     font-size: 14px;
                     line-height: 2;
-                    color: #fff;
+                    color: $white;
                 }
 
                 input:focus {
@@ -116,8 +116,8 @@
                     font-weight: 700;
                     line-height: 1.2857142857;
                     letter-spacing: 0;
-                    color: #000;
-                    background-color: #ffc222;
+                    color: $black;
+                    background-color: $yellow;
                     border-radius: 3px
                 }
             }
@@ -138,7 +138,7 @@
                 width: 48px;
                 height: 48px;
                 line-height: 48px;
-                background-color: #fff;
+                background-color: $white;
                 border-radius: 50%;
                 margin: 0;
                 display: flex;
@@ -146,7 +146,7 @@
                 align-items: center;
                 margin: 0 5px;
                 svg {
-                    color: #000;
+                    color: $black;
                     font-size: 20px;
                 }
             }
@@ -160,7 +160,7 @@
             text-decoration: none;
         }
         p {
-            color: #fff;
+            color: $white;
         }
     }
 

@@ -41,8 +41,8 @@
                     </div>
                     <button>Tìm kiếm</button>
                 </div>
-                <div class="col-md-6">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9047.530514070106!2d106.68671320361251!3d11.077245364705613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527e27942656f%3A0x6263703256bee993!2zQ8O0bmcgVHkgVE5ISCBDdW5nIOG7qG5nIE5ow6JuIEzhu7FjIE5ow6JuIEtp4buHdA!5e0!3m2!1svi!2s!4v1690767380281!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="col-md-6 mt-4 mt-md-0">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9047.530514070106!2d106.68671320361251!3d11.077245364705613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527e27942656f%3A0x6263703256bee993!2zQ8O0bmcgVHkgVE5ISCBDdW5nIOG7qG5nIE5ow6JuIEzhu7FjIE5ow6JuIEtp4buHdA!5e0!3m2!1svi!2s!4v1690767380281!5m2!1svi!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>

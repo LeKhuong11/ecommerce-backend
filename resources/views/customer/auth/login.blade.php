@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <div id="login-register-user">
+    <div class="login-register-user">
         <nav class="breadcrumb">
             <a href="{{ route('customer.home') }}" class="d-flex align-items-center text-muted">
                 <i class="fa-solid fa-house"></i>

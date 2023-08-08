@@ -54,7 +54,7 @@
                             <div class="button login">
                                 <i class="fa-solid fa-user-large text-dark"></i>
                             </div>
-                            <div class="mini-acount box-shadow box-shadow">
+                            <div class="mini-acount box-shadow">
                                 <p><a href="{{ route('customer.login') }}">Sign in</a></p>
                                 <p><a href="{{ route('customer.signup') }}" title="Register">Register</a></p>
                                 <p><a href="#" title="Wishlist">Wishlist (<span>1</span>)</a></p>
@@ -158,32 +158,34 @@
             <div class="container-fluid">
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header d-flex justify-content-end">
+                    <div class="offcanvas-header box-shadow d-flex justify-content-between">
+                        <img src="{{ asset('assets/images/logo.png') }}" alt="Logo">
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
+                        <div class="user-mobile px-2 d-flex justify-content-between align-items-center">
+                            <div class="informaton d-flex align-items-center">
+                                <img width="50" height="50" class="rounded-5" src="{{ asset('assets/images/avatar-demo.jpg') }}" alt="Avatar">
+                                <h5>Admin</h5>
+                            </div>
+                            <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+                        </div>
                         <div class="navbar-mobile">
-                            <div>
-                                <ul class="p-3">
-                                    <li><a href="#">Home</a></li>
-                                    <hr>
-                                    <li><a href="#">Menu</a></li>
-                                    <hr>
-                                    <li><a href="#">About</a></li>
-                                    <hr>
-                                    <li><a href="#">Shop</a></li>
-                                    <hr>
-                                    <li><a href="#">Blog</a></li>
-                                    <hr>
-                                    <li class="flex-row justify-content-between">
-                                        <div class="accordion w-100" id="accordionExample">
-                                            <div class="accordion-item border-0">
-                                                <h2 class="accordion-header">
+                            <ul class="p-3">
+                                <li><a href="{{ route('customer.home') }}"><i class="fa-solid fa-house px-2"></i> Home</a></li>
+                                <li><a href="#"><i class="fa-solid fa-list px-2"></i> Menu</a></li>
+                                <li><a href="{{ route('customer.about') }}"><i class="fa-solid fa-circle-info px-2"></i></i> About</a></li>
+                                <li><a href="#"><i class="fa-solid fa-store px-2"></i> Shop</a></li>
+                                <li><a href="#"><i class="fa-brands fa-blogger-b px-2"></i> Blog</a></li>
+                                <div class="flex-row justify-content-between pages-mobile">
+                                    <div class="accordion w-100" id="accordionExample">
+                                        <div class="accordion-item border-0">
+                                            <h2 class="accordion-header">
                                                 <button class="accordion-button p-0 bg-transparent shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                                    Page
+                                                    <i class="fa-solid fa-layer-group px-2 text-black"></i> Page
                                                 </button>
-                                                </h2>
-                                                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                                 <div class="accordion-body">
                                                     <ul class="p-0">
                                                         <li class="py-1"><a href="#">About us</a></li>
@@ -194,14 +196,12 @@
                                                         <li class="py-1"><a href="#">Shopping time</a></li>
                                                     </ul>
                                                 </div>
-                                                </div>
                                             </div>
                                         </div>
-                                    </li>
-                                    <hr>
-                                    <li><a href="{{ route('customer.contact') }}">Contact</a></li>
-                                </ul>
-                            </div>
+                                    </div>
+                                </div>
+                                <li><a href="{{ route('customer.contact') }}"><i class="fa-solid fa-paper-plane px-2"></i> Contact</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>

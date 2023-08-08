@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-<div class="home">
+<div id="home">
     <div class="slide">
         <div class="slide-image">
             <img src="{{ asset('assets/images/background.webp') }}" alt="">

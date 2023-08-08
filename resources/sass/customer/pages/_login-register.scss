@@ -1,8 +1,9 @@
-#login-register-user {
+.login-register-user {
 
     .login, .register {
         max-width: 30rem;
         margin: 4rem auto 14rem;
+        
         a {
             text-decoration: underline;
             color: #4d4d4d;
@@ -23,8 +24,8 @@
             text-decoration: none;
             border: 0;
             border-radius: 0;
-            background-color: #000;
-            color: #fff;
+            background-color: $black;
+            color: $white;
             width: 10rem;
             height: 3rem;
             transition: box-shadow 100ms ease;

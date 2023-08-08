@@ -7,14 +7,14 @@
     top: 0;
     left: 0;
     right: 0;
-    background-color: #fff;
+    background-color: $white;
     z-index: 999;
 
     .header-menubar {
         
         li {
             :hover {
-                color: #ffc222;
+                color: $yellow;
             }
     
             a {
@@ -49,10 +49,10 @@
             top: 150%;
             opacity: 0;
             visibility: hidden;
-            border-top: solid 3px #ffc222;
+            border-top: solid 3px $yellow;
             padding: 20px 30px;
-            color: #000;
-            background-color: #fff;
+            color: $black;
+            background-color: $white;
             width: 200px;
             z-index: 99;
             transition: all .4s;
@@ -103,14 +103,14 @@
 
             .address {
                 display: inline;
-                color: #000;
+                color: $black           
             }
         }
 
         .des-call {
             font-size: 24px;
             line-height: 24px;
-            color: #ffc222;
+            color: $yellow;
             font-family: fantasy;
         }
 
@@ -119,7 +119,7 @@
     
             &:hover {
                 .login {
-                  background-color: #ffc222;
+                  background-color: $yellow;
                 }
             
                 .mini-acount {
@@ -132,7 +132,7 @@
             .mini-acount {
                 width: 10rem;
                 z-index: 999;
-                background-color: #fff;
+                background-color: $white;
                 color: #666;
                 padding: 1rem;
                 position: absolute;
@@ -140,7 +140,6 @@
                 top: 150%;
                 right: 0;
                 border: 0.1rem solid #eaeaea;
-                box-shadow: 0 0 3rem #0000000d;
                 visibility: hidden;
                 opacity: 0;
                 transition: all .4s;
@@ -158,7 +157,7 @@
                     }
     
                     &:hover {
-                        background-color: #ffc222;
+                        background-color: $yellow;
                     }
                 }
             }
@@ -170,7 +169,7 @@
             
             &:hover {
                 .cart {
-                  background-color: #ffc222;
+                  background-color: $yellow;
                 }
             
                 .mini-cart {
@@ -186,23 +185,23 @@
                 padding: 0 5px;
                 text-align: center;
                 border-radius: 10px;
-                color: #000;
+                color: $black;               
                 display: inline-block;
                 position: absolute;
                 bottom: 50%;
                 left: 59%;
                 font-weight: 700;
-                background-color: #ffc222;
+                background-color: $yellow;
             }
     
             .mini-cart {
                 position: absolute;
-                border-top: 0.3rem solid #000;
+                border-top: 0.3rem solid $black;
                 top: 90%;
                 right: 0;
                 color: #666;
                 width: 22rem;
-                background: #fff;
+                background: $white;
                 padding: 2rem 1rem 0;
                 z-index: 999;
                 visibility: hidden;
@@ -228,7 +227,7 @@
                         display: flex;
                         
                         button {
-                            background: #fff;
+                            background: $white;
                             border: 1px solid #cacaca;
                             width: 35px;
                         }
@@ -249,7 +248,7 @@
                         
                         &:hover {
                             svg {
-                                color: #000;
+                                color: $black;                          
                             }
                         }
                     }
@@ -270,13 +269,13 @@
     
                     .gotocart-btn {
                         a {
-                            background-color: #000;
-                            color: #fff;
+                            background-color: $black;
+                            color: $white;
                         }
                     }
                     .checkout-btn {
                         a {
-                            border: 1px solid #000;
+                            border: 1px solid $black                       
                         }
                     }
                     
@@ -295,18 +294,107 @@
             margin-left: 15px;
     
             :hover {
-                color: #fff;
+                color: $white;
             }
     
             a {
                 font-size: 17px;
                 line-height: 20px;
                 padding: 16px 32px;
-                background-color: #ffc222;
+                background-color: $yellow;
                 border-radius: 8px;
                 font-family: fantasy;
                 display: block;
                 width: max-content;
+            }
+        }
+    }
+
+    //Navbar mobile
+    .navbar {
+        .user-mobile {
+            h5 {
+                font-family: inherit;
+                color: #676767;
+                font-size: 16px;
+                padding: 0 10px;
+                margin: 0;
+            }
+            a {
+                text-decoration: underline;
+                svg {
+                    color: $green;
+                }
+            }
+        }
+
+        .navbar-mobile {
+
+            &>ul {
+                &>li {
+                    background: #e8e8e8aa;
+                    padding: 12px;
+                    border-radius: 6px;
+                    margin: 15px 0;
+                    color: #484848;
+        
+                    a {
+                        transition: all .2s linear;
+
+                        svg {
+                            color: #484848;
+                        }
+                    }
+                    &:hover {
+                        a {
+                            color: $yellow;
+                            transform: translateX(20px);
+                        }
+                    }
+                }
+
+                .pages-mobile {
+                    background: rgba(243, 243, 243, 0.667);
+                    border-radius: 6px;
+                    margin: 15px 0;
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    
+    
+                    li {
+                        padding: 10px 0 !important; 
+                        a {
+                            transition: all .2s linear;
+                            svg {
+                                color: #484848;
+                            }
+                        }
+    
+                        &:hover {
+                            a {
+                                color: $yellow;
+                                transform: translateX(20px);
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .accordion-item{
+                 border: none;
+                 background-color: #fafafa;
+
+                svg {
+                    color: #484848 !important;
+                }
+            }
+    
+            .accordion-header {
+                padding: 13px;
+                background: #e8e8e8aa;
+                border-radius: 4px;
             }
         }
     }
@@ -346,7 +434,7 @@
 
     a {
         text-decoration: none;
-        color: #000000;
+        color: $black;
     }
 
     li {
