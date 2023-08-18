@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('seo')
-    <title>Contact</title>
+    <title>About us</title>
 @endsection
 
 @section('content')

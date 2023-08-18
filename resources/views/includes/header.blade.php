@@ -64,7 +64,7 @@
                         </div>
                         <div class="header-cart ">
                             <div class="button cart">
-                                <a href="#"><i class="fas fa-shopping-basket text-dark"></i></a>
+                                <i class="fas fa-shopping-basket text-dark"></i>
                             </div>
                             <div class="cart-count-bubble">
                                 <span aria-hidden="true">4</span>
@@ -171,13 +171,13 @@
                             <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
                         </div>
                         <div class="navbar-mobile">
-                            <ul class="p-3">
-                                <li><a href="{{ route('customer.home') }}"><i class="fa-solid fa-house px-2"></i> Home</a></li>
-                                <li><a href="#"><i class="fa-solid fa-list px-2"></i> Menu</a></li>
-                                <li><a href="{{ route('customer.about') }}"><i class="fa-solid fa-circle-info px-2"></i></i> About</a></li>
-                                <li><a href="#"><i class="fa-solid fa-store px-2"></i> Shop</a></li>
-                                <li><a href="#"><i class="fa-brands fa-blogger-b px-2"></i> Blog</a></li>
-                                <div class="flex-row justify-content-between pages-mobile">
+                            <ul class="mt-3 px-0">
+                                <li class="{{ in_array($segment_check, array('')) ? 'active-mobile' : ''}}"><a href="{{ route('customer.home') }}"><i class="fa-solid fa-house px-2"></i> Home</a></li>
+                                <li class="{{ in_array($segment_check, array('menu')) ? 'active-mobile' : ''}}"><a href="#"><i class="fa-solid fa-list px-2"></i> Menu</a></li>
+                                <li class="{{ in_array($segment_check, array('about')) ? 'active-mobile' : ''}}"><a href="{{ route('customer.about') }}"><i class="fa-solid fa-circle-info px-2"></i></i> About</a></li>
+                                <li class="{{ in_array($segment_check, array('shop')) ? 'active-mobile' : ''}}"><a href="#"><i class="fa-solid fa-store px-2"></i> Shop</a></li>
+                                <li class="{{ in_array($segment_check, array('blog')) ? 'active-mobile' : ''}}"><a href="#"><i class="fa-brands fa-blogger-b px-2"></i> Blog</a></li>
+                                <div class="flex-row justify-content-between pages-mobile {{ in_array($segment_check, array('pages')) ? 'active-mobile' : ''}}">
                                     <div class="accordion w-100" id="accordionExample">
                                         <div class="accordion-item border-0">
                                             <h2 class="accordion-header">
@@ -186,7 +186,7 @@
                                                 </button>
                                             </h2>
                                             <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                                <div class="accordion-body">
+                                                <div class="accordion-body mx-4 py-0">
                                                     <ul class="p-0">
                                                         <li class="py-1"><a href="#">About us</a></li>
                                                         <li class="py-1"><a href="#">Brands</a></li>
@@ -200,7 +200,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <li><a href="{{ route('customer.contact') }}"><i class="fa-solid fa-paper-plane px-2"></i> Contact</a></li>
+                                <li class="{{ in_array($segment_check, array('contact')) ? 'active-mobile' : ''}}"><a href="{{ route('customer.contact') }}"><i class="fa-solid fa-paper-plane px-2"></i> Contact</a></li>
                             </ul>
                         </div>
                     </div>

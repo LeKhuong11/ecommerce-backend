@@ -119,9 +119,9 @@
             </div>
         </div>
     </div>
-    <div class="products">
+    <div class="products py-5">
         <div class="container">
-            <h2 class="section-header">Popular dishes</h2>
+            <h2 class="section-header py-2">Popular dishes</h2>
             <div class="row">
                 <div class="col-sm-6 col-lg-4 col-xl-3">
                     <div class="product-item">
@@ -145,7 +145,7 @@
                             </div>
                         </div>
                         <div class="review">
-                            <h5><a href="#">Apricot Chicken 1</a></h5>
+                            <h5><a href="{{ route('customer.detail') }}">Apricot Chicken 1</a></h5>
                             <p>Although the legendary Double Burger really needs no introduction, please allow us…
                                 Tucked in between three soft buns are two all-beef patties, cheddar cheese, ketchup,
                                 onion, pickles and iceberg lettuce. Hesburger’s own paprika and cucumber mayonnaise add
@@ -372,7 +372,7 @@
                 <h2>hotdog</h2>
                 <a href="" class="btn-base">
                     ORDER NOW
-                </a>
+                </a>    
             </div>
             <div class="image-sale d-none d-sm-block">
                 <img src="{{ asset('assets/images/image-sale.avif')}}" alt="Sale">
