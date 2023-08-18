@@ -30,7 +30,6 @@ Route::get('/about', [AboutController::class, 'index'])->name('customer.about');
 Route::get('/login', [LoginController::class, 'index'])->name('customer.login');
 Route::get('/signup', [SignupController::class, 'index'])->name('customer.signup');
 Route::get('/cart', [CartController::class, 'index'])->name('customer.cart');
-Route::get('/electronic-bill', [ElectronicBillController::class, 'index'])->name('customer.electronic-bill');
 Route::get('/branches', [BranchController::class, 'index'])->name('customer.branch');
 Route::get('/product/detail/123', [ProductController::class, 'index'])->name('customer.detail');
 
