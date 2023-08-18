@@ -8,7 +8,7 @@
             <div class="row">
                 <div class="d-flex align-items-center justify-content-between">
                     <div class="header-logo">
-                        <a href="{{ route('customer.home') }}" class=""><img width="200" src="{{ asset('assets/images/logo.png')}}" loading="lazy" width="auto"
+                        <a href="{{ route('customer.home') }}" class=""><img src="{{ asset('assets/images/logo.png')}}" loading="lazy" width="auto"
                                 height="auto" alt="logo"></a>
                     </div>
                     <div class="header-menubar px-3 d-flex align-align-items-center">
