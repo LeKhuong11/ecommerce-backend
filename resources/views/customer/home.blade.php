@@ -11,7 +11,7 @@
             <img src="{{ asset('assets/images/background.webp') }}" alt="">
             <div class="text-slider d-flex text-start">
                 <div class="text-slider-content">
-                    <h4>UNLIMITED <br> MEDIUM <span>PIZZAS</span></h4>
+                    <h4>UNLIMITED <br> MEDIUM <span>PIZZASs</span></h4>
                     <h2>Medium 2-topping* pizza</h2>
                     <p>*Additional charge for premium toppings. Minimum of 2 required.</p>
                     <div class="wp-btn">
